@@ -1,0 +1,53 @@
+/* navbar */
+.navbar{
+  display: flex;
+  background-color: bisque;
+  align-items: center;
+  place-content: center;
+  padding: 2rem 2.5rem 1rem;
+  gap: 30rem;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav-items{
+  display: flex;
+  gap: 2rem;
+}
+.nav-link{
+  color: var(--Grayish-Violet);
+}
+.nav-link:hover{
+  color: var(--Very-Dark-Violet);
+  transition: .6s ease-in all;
+}
+.sign{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.login{
+  color: var(--Grayish-Violet);
+}
+.login:hover{
+  color: var(--Very-Dark-Violet);
+  transition: .6s ease-in all;
+}
+.sign .btn{
+  padding: .9rem 2rem;
+  border-radius: 6rem;
+  background-color: var(--Cyan);
+  color: var(--White);
+  cursor: pointer;
+  font-weight: 700;
+}
+.sign .btn:hover{
+  background-color: var(--Trans);
+  transition: .6s ease-in-out all;
+  padding: .95rem 2.1rem;
+}
+.menu, .sign-mob{
+  display: none;
+}
