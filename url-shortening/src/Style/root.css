@@ -25,12 +25,14 @@ html {
 
 :root{
 --Cyan: hsla(180, 66%, 49%, 0.747);
---Trans: hsla(180, 66%, 49%, 0.596);
+--Trans: hsla(180, 84%, 53%, 0.89);
 --Dark-Violet: hsl(257, 27%, 26%);
 --Red: hsl(0, 87%, 67%);
 --Gray: hsl(0, 0%, 75%);
+/* --GrayT: hsla(0, 0%, 75%, 0.253); */
 --White: hsl(0, 0%, 100%);
 --Grayish-Violet: hsl(257, 7%, 63%);
+--GrayT: hsla(258, 7%, 63%, 0.219);
 --Very-Dark-Blue: hsl(255, 11%, 22%);
 --Very-Dark-Violet: hsl(260, 8%, 14%);
 --Font-family: 'Poppins', sans-serif;

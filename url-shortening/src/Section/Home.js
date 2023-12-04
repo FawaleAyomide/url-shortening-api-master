@@ -31,57 +31,76 @@ const Home = () => {
     </div>
     </main>
     </header>
-  
-  Shorten a link here...
+    <section>
+        <div className="sect-1-cont">
+    <section>
+        <div className="shorten" data-aos='zoom-in-up'>
+        <input type="text" placeholder="Shorten a link here..." />
+        <button className="btn">Shorten It!</button>
+        </div>
+    </section>
+        <div className="sect-1">
+            <div className="head">
+            <h1>Advanced Statistics</h1>
+            <p>Track how your links are performing across the web with our 
+            advanced statistics dashboard.
+            </p>
+            </div>
+            <div className="box-cont">
+                <div className="box">
+                    Brand Recognition
 
-  Shorten It!
+                    Boost your brand recognition with each click. Generic links don’t 
+                    mean a thing. Branded links help instil confidence in your content.
+                </div>
+                <div className="box">
+                    Detailed Records
 
-  Advanced Statistics
+                    Gain insights into who is clicking your links. Knowing when and where 
+                    people engage with your content helps inform better decisions.
+                </div>
+                <div className="box">
+                    Fully Customizable
 
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
+                    Improve brand awareness and content discoverability through customizable 
+                    links, supercharging audience engagement.
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div className="sect-2">
+            Boost your links today
 
-  Brand Recognition
+            Get Started
+        </div>
+    </section>
+    <footer>
+            Features
 
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
+            Link Shortening
+            Branded Links
+            Analytics
 
-  Detailed Records
+            Resources
 
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
+            Blog
+            Developers
+            Support
 
-  Fully Customizable
+            Company
 
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
+            About
+            Our Team
+            Careers
+            Contact
+            
+            <div class="attribution"> 
+                Coded by <a href="https://my-portfolio-swart-xi.vercel.app/">Zcodes</a>..
+            </div>
+    </footer>
 
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution"> 
-    Coded by <a href="https://my-portfolio-swart-xi.vercel.app/">Zcodes</a>..
-  </div>
   </div>;
 };
 
