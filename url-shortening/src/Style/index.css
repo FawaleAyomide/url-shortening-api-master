@@ -149,6 +149,10 @@ main .hero{
   padding: .9rem 2.1rem;
   width: 11.1rem;
 }
+.load{
+  width: 2rem;
+  height: 1rem;
+}
 /* section-1 */
 .sect-1{
   display: flex;

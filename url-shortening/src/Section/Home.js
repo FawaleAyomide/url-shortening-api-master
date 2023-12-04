@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import axios from 'axios';
 import Nav from "./Nav";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -12,15 +13,36 @@ import { RiFacebookBoxFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
+import { Circles } from 'react-loading-icons';
 
 const Home = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 400,
-      easing: "ease",
-      Once: false,
+    const [loading, setLoading] = useState('false');
+    const [input, setInput] = useState('');
+    const [result, setResult] = useState('');
+    // const [error, setError] = useState();
+
+    useEffect(() => {
+        Aos.init({
+            duration: 400,
+            easing: "ease",
+            Once: false,
+        });
     });
-  });
+    const fetchData = async () => {
+        try{
+            setLoading('true')
+            const res = await axios(`https://api.shrtco.de/v2/shorten?url=${input}`)
+            setLoading('false')
+            setResult(res.data.result.full_short_link)
+        }catch(error){
+            // setError(error)
+            alert(error)
+        }
+    }
+    const handleClick = () => {
+        fetchData();
+        setInput('');
+    }
 
   return (
     <div>
@@ -51,8 +73,11 @@ const Home = () => {
       <section>
         <div className="sect-1-cont">
           <div className="shorten" data-aos="zoom-in-up">
-            <input type="text" placeholder="Shorten a link here..." />
-            <button className="btn">Shorten It!</button>
+            <input type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder="Shorten a link here..." />
+            <button className="btn" onClick={handleClick}>{loading === 'true' ? <Circles  className="load"/> : <p>Shorten It!</p>}</button>
+            
+            <p>{result}</p>
+            {/* <p>{error}</p> */}
           </div>
           <div className="sect-1">
             <div className="head" data-aos="zoom-out-up" data-aos-delay="350">
