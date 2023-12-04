@@ -178,13 +178,13 @@
   }
 }
 @media (max-width: 735px) {
-    .box{
-        text-align: center;
-    }
-    .brand{
-      left: 50%;
-      transform: translate(-50%, -7%);
-    }
+  .box {
+    text-align: center;
+  }
+  .brand {
+    left: 50%;
+    transform: translate(-50%, -7%);
+  }
   .box:nth-child(2) {
     margin-top: 2rem;
   }
@@ -194,7 +194,7 @@
 }
 @media (max-width: 630px) {
   .sect-1 {
-    padding: 9rem 1rem 2rem;
+    padding: 9rem 1rem 6rem;
   }
 }
 @media (max-width: 550px) {
@@ -203,10 +203,49 @@
   }
 }
 @media (max-width: 410px) {
-    .box {
-        padding: 4rem 1rem 2rem;
-      }
-    .box p{
-        width: 100%;
-      }
+  .box {
+    padding: 4rem 1rem 2rem;
+  }
+  .box p {
+    width: 100%;
+  }
+}
+/* section-2 */
+@media (max-width: 630px) {
+  .sect-2 {
+    background: url(../images/bg-boost-mobile.svg) center no-repeat;
+    background-size: cover;
+    background-color: var(--Dark-Violet);
+  }
+}
+/* footer */
+@media (max-width: 1165px) {
+  .foot{
+    gap: 3.5rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1065px) {
+  .foot .logo{
+    margin-right: 4rem;
+  }
+}
+@media (max-width: 1065px) {
+  .foot .logo{
+    margin-right: 0;
+  }
+}
+@media (max-width: 940px) {
+  .foot{
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 940px) {
+  .foot{
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot .logo{
+    margin: auto;
+  }
 }
