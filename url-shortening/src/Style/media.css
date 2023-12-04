@@ -92,7 +92,7 @@
     background: url(../images/bg-shorten-mobile.svg) center no-repeat;
     background-size: contain;
     background-color: var(--Dark-Violet);
-    top: -18%;
+    top: -9%;
   }
   .shorten .input {
     width: 100%;
@@ -169,8 +169,31 @@
 }
 
 /* section-1 */
+@media (max-width: 1105px) {
+  .box:nth-child(2) {
+    margin-top: 0;
+  }
+  .box:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 735px) {
+    .box{
+        text-align: center;
+    }
+    .brand{
+      left: 50%;
+      transform: translate(-50%, -7%);
+    }
+  .box:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .box:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
 @media (max-width: 630px) {
-  .sect-1{
+  .sect-1 {
     padding: 9rem 1rem 2rem;
   }
 }
@@ -178,4 +201,12 @@
   .sect-1 .head p {
     width: 100%;
   }
+}
+@media (max-width: 410px) {
+    .box {
+        padding: 4rem 1rem 2rem;
+      }
+    .box p{
+        width: 100%;
+      }
 }
