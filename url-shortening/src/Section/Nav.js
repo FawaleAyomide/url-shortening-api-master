@@ -11,7 +11,7 @@ const Nav = () => {
     };
   return (
     <>
-      <div className="navbar">
+      <div className="navbar" data-aos='zoom-in-up'>
         <div className="nav">
         <Link to="/">
           <img src={Logo} alt="logo" className="logo" />

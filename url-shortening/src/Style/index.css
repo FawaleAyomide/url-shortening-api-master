@@ -1,10 +1,10 @@
 /* navbar */
 .navbar{
   display: flex;
-  background-color: bisque;
   align-items: center;
   place-content: center;
   padding: 2rem 2.5rem 1rem;
+  margin-bottom: .2rem;
   gap: 30rem;
 }
 .nav{
@@ -50,4 +50,55 @@
 }
 .menu, .sign-mob{
   display: none;
+}
+/* main */
+main{
+  display: flex;
+  align-items: center;
+  place-content: center;
+  min-width: 100%;
+  margin: auto;
+  gap: 4rem;
+  padding: 2rem 2.5rem 1rem;
+}
+main .text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main h1{
+  width: 30rem;
+  color: var(--Very-Dark-Blue);
+  line-height: 4rem;
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+main p{
+  width: 27rem;
+  color: var(--Grayish-Violet);
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+}
+main .btn{
+  width: 11rem;
+  background-color: var(--Cyan);
+  color: var(--White);
+  border-radius: 6rem;
+  padding: .9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .btn:hover{
+  background-color: var(--Trans);
+  transition: .6s ease-in-out all;
+  padding: .9rem 2.1rem;
+  width: 11.1rem;
+}
+main .img{
+  /* width: 40%; */
+}
+main .hero{
+  width: 35rem;
+  height: 25rem;
 }

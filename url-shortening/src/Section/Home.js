@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import Nav from "./Nav";
 import Aos from "aos";
 import 'aos/dist/aos.css'
+import Hero from '../images/illustration-working.svg'
 
 const Home = () => {
 
@@ -17,12 +18,18 @@ const Home = () => {
   return <div>
     <header>
     <Nav/>
-    More than just shorter links
-
-    Build your brand’s recognition and get detailed insights 
+    <main>
+    <div className="text">
+    <h1 data-aos='fade-right'>More than just shorter links</h1>
+    <p data-aos='fade-left'>Build your brand’s recognition and get detailed insights 
     on how your links are performing.
-
-    Get Started
+    </p>
+    <button className="btn" data-aos='fade-up'>Get Started</button>
+    </div>
+    <div className="img">
+    <img src={Hero} alt="hero-img" className="hero" data-aos='fade-up-right' />
+    </div>
+    </main>
     </header>
   
   Shorten a link here...
