@@ -166,7 +166,7 @@ const Home = () => {
         <FaInstagram className="icon" />
         </div>
         <div class="attribution">
-          Coded by <a href="https://portfolio-ten-chi-17.vercel.app/">Zcodes</a>..
+          Coded by <a href="https://portfolio-ten-chi-17.vercel.app/" target="_blank">Zcodes</a>..
         </div>
         </div>
         </div>
